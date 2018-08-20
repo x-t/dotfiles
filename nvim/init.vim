@@ -27,6 +27,12 @@ let g:airline_theme='deus'
 " Fucking NERD
 let NERDTreeQuitOnOpen = 1
 
+" Tabs as spaces
+filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
 " Maps
 let mapleader = ";"
 
