@@ -1,0 +1,3 @@
+#!/bin/bash
+
+df -Th | head -1 && df -Th | grep sd

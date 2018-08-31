@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cmus-remote -Q | awk '/tag title / { $1=""; $2=""; print } /tag artist / { $1=""; $2=""; print }' | tac | sed ':a;N;$!ba;s/\n/ /g; s/^\ \ //; s/\ \ \ /\ -\ /'

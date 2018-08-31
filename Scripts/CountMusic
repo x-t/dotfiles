@@ -1,0 +1,41 @@
+#!/bin/bash
+
+find ./ | awk '
+
+BEGIN {
+    AllMusic=0
+    Flacs=0
+    MPThrees=0
+    MFourAs=0
+    WAVs=0
+}
+
+/flac$/ {
+    AllMusic++
+    Flacs++
+}
+
+/mp3$/ {
+    AllMusic++
+    MPThrees++
+}
+
+/m4a$/ {
+    AllMusic++
+    MFourAs++
+}
+
+/wav$/ {
+    AllMusic++
+    WAVs++
+}
+
+END {
+    print "Total music:", AllMusic
+    print "FLACs:", Flacs
+    print "MP3s:", MPThrees
+    print "M4As:", MFourAs
+    print "WAVs:", WAVs
+}
+
+'
