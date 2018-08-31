@@ -27,6 +27,12 @@ let g:airline_theme='deus'
 " Fucking NERD
 let NERDTreeQuitOnOpen = 1
 
+" Tabs as spaces
+filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
 " Maps
 let mapleader = ";"
 
@@ -38,9 +44,9 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-map gn :bn<cr>
-map gp :bp<cr>
-map gd :bd<cr>
+map <leader>n :bn<cr>
+map <leader>p :bp<cr>
+map <leader>d :bd<cr>
 
 " Lisp crap
 set lispwords+=public-method,override-method,private-method,syntax-case,syntax-rules
