@@ -1,8 +1,3 @@
-" ********************
-" Copyright (c) cmp
-" All rights reserved
-" ********************
-
 " Line numbers
 set number
 set relativenumber
