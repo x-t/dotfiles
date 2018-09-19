@@ -51,8 +51,8 @@ bindsym $mod+b exec $browser
 bindsym $mod+Shift+q kill
 
 # take screenshots
-bindsym Print exec "maim -u shot.png && limf -l shot.png | xclip -sel clip"
-bindsym Ctrl+Print exec "maim -u -s shot.png && limf -l shot.png | xclip -sel clip"
+bindsym Print exec maim -u shot.png && sleep 0.3 && xclip -sel clip -t image/png -i /home/cmp/shot.png
+bindsym Ctrl+Print exec maim -u -s shot.png && sleep 0.3 && xclip -sel clip -t image/png -i /home/cmp/shot.png
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec $dmenu
@@ -222,3 +222,4 @@ exec mate-power-manager &
 exec telegram-desktop -startintray &
 exec tmux new-session -d -s main 'cmus; bash' || true
 exec $term -T tmux_main -x tmux a -t main
+
