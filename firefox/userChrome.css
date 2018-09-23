@@ -1,0 +1,27 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* to hide the native tabs */
+#TabsToolbar {
+    visibility: collapse;
+}
+
+/* to hide the sidebar header */
+#sidebar-header {
+    visibility: collapse;
+}
+
+#sidebar { 
+    min-width:0px !important;
+    max-width:none !important;
+}
+
+.bookmark-item[image*="favicon.gif"] .menu-iconic-icon,
+.bookmark-item[image*="favicon.gif"] .toolbarbutton-icon,
+.bookmark-item[image*="favicon.gif"]:not([container]) .menu-iconic-icon,
+.bookmark-item[image*="favicon.gif"]:not([container]) .toolbarbutton-icon {
+width: 0 !important; padding-left: 16px !important;
+background: transparent url(chrome://global/skin/icons/folder-item.png) no-repeat !important;
+}
+#page-proxy-favicon[src$="favicon.gif"], tab[image$="favicon.gif"] .tab-icon{
+width: 0 !important; padding-left: 16px !important;
+}
