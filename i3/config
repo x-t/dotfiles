@@ -183,10 +183,16 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 20
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 
 
 # cmus
-bindsym XF86AudioPlay exec cmus-remote -u
-bindsym XF86AudioNext exec cmus-remote -n
-bindsym XF86AudioPrev exec cmus-remote -r
-bindsym XF86AudioStop exec cmus-remote -s
+#bindsym XF86AudioPlay exec cmus-remote -u
+#bindsym XF86AudioNext exec cmus-remote -n
+#bindsym XF86AudioPrev exec cmus-remote -r
+#bindsym XF86AudioStop exec cmus-remote -s
+
+# ncmpcpp
+bindsym XF86AudioPlay exec mpc toggle
+bindsym XF86AudioNext exec mpc next
+bindsym XF86AudioPrev exec mpc prev
+bindsym XF86AudioStop exec mpc stop
 
 # gaps
 gaps inner 10
@@ -217,9 +223,8 @@ exec --no-startup-id nm-applet &
 exec --no-startup-id compton -b &
 exec --no-startup-id /home/cmp/Scripts/Keyboard.sh
 exec --no-startup-id xset b off
-exec --no-startup-id tmux new-session -d -s "main" 'cmus; bash'
 exec mate-power-manager &
 exec telegram-desktop -startintray &
-exec tmux new-session -d -s main 'cmus; bash' || true
+exec tmux new-session -d -s main 'ncmpcpp && bash' || true
 exec $term -T tmux_main -x tmux a -t main
 
