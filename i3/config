@@ -191,8 +191,8 @@ bindsym XF86AudioPrev exec cmus-remote -r
 bindsym XF86AudioStop exec cmus-remote -s
 
 # gaps
-gaps inner 10
-gaps outer 10
+gaps inner 5
+gaps outer 5
 bindsym $mod+comma gaps inner current set 0; gaps outer current set 0
 bindsym $mod+period gaps inner current set 10; gaps outer current set 10
 
@@ -200,6 +200,7 @@ bindsym $mod+period gaps inner current set 10; gaps outer current set 10
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+    position top
  colors {
         background #000000
         statusline #000000
