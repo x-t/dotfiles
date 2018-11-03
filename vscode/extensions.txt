@@ -1,0 +1,7 @@
+Equinusocio.vsc-material-theme
+luggage66.AWK
+ms-python.python
+ms-vscode.cpptools
+ms-vsliveshare.vsliveshare
+olback.es6-css-minify
+teabyii.ayu

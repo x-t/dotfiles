@@ -44,15 +44,9 @@ esac
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
 
-############################################
-# BLOCK: Force color bash prompt
-############################################
 
+# @FORCECOLOR
 force_color_prompt=yes
-
-############################################
-#                 ENDBLOCK
-############################################
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -72,19 +66,13 @@ fi
 #fi
 unset color_prompt force_color_prompt
 
-#######################
-# BLOCK: PS1
-#######################
+# @PS1
 
 if [ $UID -eq 0 ]; then
     PS1="\[\033[01;31m\]\w\[\033[00m\]> "
 else
     PS1="\[\033[01;34m\]\w\[\033[00m\]> "
 fi
-
-#######################
-#       ENDBLOCK
-#######################
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
@@ -135,13 +123,14 @@ if ! shopt -oq posix; then
   fi
 fi
 
-##########################################
-# BLOCK: Custom shell modifications
-##########################################
+# @CUSTOM
 
 alias l="ls -lh"
 alias ll="ls -lah"
 alias v="nvim"
+alias code="code-insiders"
+
+SCRIPTDIR="/home/cmp/Scripts"
 
 mkcd() {
 	mkdir $1
@@ -159,7 +148,7 @@ pkg() {
 export VISUAL='nvim'
 export EDITOR='nvim'
 
-PATH="$PATH:/home/cmp/Scripts"
-#######################################
-#               ENDBLOCK
-#######################################
+# Remove scripts from path
+PATH=$(echo $PATH | sed "s:\:${SCRIPTDIR}::g;")
+# Append scripts to PATH
+PATH="$PATH:$SCRIPTDIR"

@@ -1,0 +1,10 @@
+Folder,Changes,Notes
+bash,"~/.bashrc"
+chromium,"~/.config/chromium/Local State","Change the ""browser"" block with the given one at the beggining of Local State"
+firefox,"~/.mozilla/firefox/<profile>/chrome/userChrome.css","Extensions not included"
+fonts,"~/.fonts","Additional fonts. Run ""fc-cache -f -v"" after copying."
+i3,"~/.config/i3/config","Hardcoded home folder."
+i3blocks,"~/.config/i3blocks/config"
+nvim,"~/.config/nvim/init.vim","Vim Plug not included."
+Scripts,"Custom.","A collection of scripts"
+vscode,"Not needed.","Apply settings.json in settings, install extensions yourself."

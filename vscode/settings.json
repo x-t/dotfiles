@@ -1,0 +1,11 @@
+{
+    "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "es6-css-minify.hideButton": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "files.enableTrash": false,
+    "es6-css-minify.minifyOnSave": "exists",
+    "workbench.colorTheme": "Material Theme Ocean High Contrast",
+    "workbench.statusBar.feedback.visible": false,
+    "telemetry.enableTelemetry": false
+}
