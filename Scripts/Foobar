@@ -1,0 +1,12 @@
+#!/bin/bash
+winep="/home/cmp"
+case $1 in
+toggle) wine "$winep/.wine/drive_c/Program Files (x86)/foobar2000/foobar2000.exe" /playpause
+    ;;
+stop) wine "$winep/.wine/drive_c/Program Files (x86)/foobar2000/foobar2000.exe" /stop
+    ;;
+next) wine "$winep/.wine/drive_c/Program Files (x86)/foobar2000/foobar2000.exe" /next
+    ;;
+prev) wine "$winep/.wine/drive_c/Program Files (x86)/foobar2000/foobar2000.exe" /prev
+    ;;
+esac
