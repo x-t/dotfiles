@@ -1,0 +1,35 @@
+(package-initialize)
+
+(add-to-list 'package-archives '("melpa" .
+				 "https://melpa.org/packages/"))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes (quote (gruvbox-dark-medium)))
+ '(custom-safe-themes
+   (quote
+    ("021720af46e6e78e2be7875b2b5b05344f4e21fad70d17af7acfd6922386b61e" default)))
+ '(package-selected-packages
+   (quote
+    (gruvbox-theme evil 2048-game counsel helm helm-ebdb))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+(global-set-key (kbd "C-s") 'helm-occur)
+(global-set-key (kbd "M-x") 'counsel-M-x)
+(global-set-key (kbd "C-x C-f") 'counsel-find-file)
+(global-set-key (kbd "C-h f") 'counsel-describe-function)
+(global-set-key (kbd "C-h v") 'counsel-describe-variable)
+(global-set-key (kbd "C-h l") 'counsel-find-library)
+(global-set-key (kbd "C-c i") 'counsel-info-lookup-symbol)
+(global-set-key (kbd "C-c u") 'counsel-unicode-char)
+(global-set-key (kbd "C-c o") 'counsel-outline)
+
+(set-frame-font "Terminus 10" nil t)
+(global-font-lock-mode 0)

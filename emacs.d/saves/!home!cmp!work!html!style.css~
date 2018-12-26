@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+    color: #d5dbe5;
+    font-family: monospace;
+}
+
+#pgdiv {
+    text-align: center;
+}
+
+#tdiv {
+    text-align: left;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    outline: 0;
+}
+

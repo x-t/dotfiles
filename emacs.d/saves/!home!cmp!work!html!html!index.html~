@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>cmp</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div id="pgdiv">
+        <h2>cmp</h2>
+        <div id="tdiv">
+            <p>hello. i do stuff. bad stuff, in fact.</p>
+            <h4>contact info</h4>
+            <ul>
+                <li>irc &mdash; cmpxchg8b on <a href="irc://irc.freenode.net/cmpxchg8b">freenode</a> or cmp on rizon</li>
+                <li>email &mdash; <a href="mailto:cmp@airmail.cc">cmp@airmail.cc</a></li>
+                <li>xmpp &mdash; <a href="xmpp:cmp@ed1.club">cmp@ed1.club</a></li>
+                <li>otr fp &mdash; EE5ED0D2 5A358ED7 D58586F1 4A389783 456B57E1</li>
+                <li>mastodon &mdash; @cmp@cybre.space</li>
+            </ul>
+            <h4>git</h4>
+            <ul>
+                <li>notabug &mdash; <a href="https://notabug.org/cmp">cmp</a></li>
+                <li>github &mdash; <a href="https://github.com/x-t">x-t</a></li>
+            </ul>
+        </div>
+        <br><br><br>
+	<p>leave something on the <a href="https://f00f.me/guestbook">guestbook</a></p>
+   </div>
+</body>
+</html>
