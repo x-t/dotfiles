@@ -1,3 +1,4 @@
 setxkbmap -option "ctrl:nocaps"
 xset r rate 200 50
 xset b off
+sudo mount -t nfs4 192.168.1.145:/srv/nfs /mnt/nfs

@@ -1,5 +1,0 @@
-#!/bin/bash
-if [[ `cmus-remote -Q | grep status` == "status playing" ]]; then 
-purple-remote "setstatus?status=available&message=`CmusCurrent`"
-CmusCurrent
-fi
