@@ -1,5 +1,5 @@
 Folder,Changes,Notes
-bash,"~/.bashrc",""
+bash,"~/.bashrc or ~/.bash_profile",""
 chromium,"~/.config/chromium/Local State","Change the ""browser"" block with the given one at the beggining of Local State"
 firefox,"~/.mozilla/firefox/<profile>/chrome/userChrome.css","Extensions not included"
 fonts,"~/.fonts","Additional fonts. Run ""fc-cache -f -v"" after copying."
